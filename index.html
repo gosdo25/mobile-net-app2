@@ -1,0 +1,254 @@
+<html>
+<head>
+  <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body >
+  <center>
+    <div class="container">
+<h3 btn btn-warning heading>CASE STUDY BETWEEN GOOGLE LENS AND MOBILNET
+  <hr>
+  
+
+ 
+<h3>GOOGLE LENS
+  <img src="google.png" id="logo">
+</h3>
+
+
+
+
+
+<h3>VS</h3>
+
+<h3 class="btn btn-primary">Moblienet</h3>
+</h3>
+
+<br>
+
+<ol>
+
+
+  <div class="test_image_and_result col-xs-12">
+<li class="col-sm-4 col-xs-12">
+<b>Test Image - </b>
+
+<img src="bannana.jpg" class="img-responsive">
+</li>
+
+<h5 class="col-sm-4 col-xs-12">
+Output on <b style="color:purple";>GOOGLE LENS</b> = 
+<span style="color:red;">Banana,Plantain,Kluai Nga Chang</span>
+</h5>
+<h5 class="col-sm-4 col-xs-12">
+  Output on <b style="color:purple;">Mobilnet Model</b> = 
+  <span style="color:red;">Bannana</span>
+  </h5>
+  <div class="mini_result" class="col-xs-12">
+    <h4>Result = Both Accurate </h4>
+   <hr>
+   <h4></h4>
+  
+  </div>
+  </div>
+
+  <div class="test_image_and_result col-xs-12">
+    <li class="col-sm-4 col-xs-12">
+    <b>Test Image - </b>
+    
+    <img src="cellotape.jpg" class="img-responsive">
+    </li>
+    
+    <h5 class="col-sm-4 col-xs-12">
+    Output on <b style="color:purple";>GOOGLE LENS</b> = 
+    <span style="color:red;">Adhesive Tape,Sealing Tape,Box Sealing Tape</span>
+    </h5>
+    <h5 class="col-sm-4 col-xs-12">
+      Output on <b style="color:purple;">Mobilnet Model</b> = 
+      <span style="color:red;">Seatbelt</span>
+      </h5>
+      <div class="mini_result" class="col-xs-12">
+        <h4>Result = Google Net Is Accurate</h4>
+       <hr>
+       <h4></h4>
+      
+      </div>
+      </div>
+
+      <div class="test_image_and_result col-xs-12">
+        <li class="col-sm-4 col-xs-12">
+        <b>Test Image - </b>
+        
+        <img src="cup.jpg" class="img-responsive">
+        </li>
+        
+        <h5 class="col-sm-4 col-xs-12">
+        Output on <b style="color:purple";>GOOGLE LENS</b> = 
+        <span style="color:red;">Mug Cup,Coffee Mug,Note Mug</span>
+        </h5>
+        <h5 class="col-sm-4 col-xs-12">
+          Output on <b style="color:purple;">Mobilnet Model</b> = 
+          <span style="color:red;">Coffee Mug</span>
+          </h5>
+          <div class="mini_result" class="col-xs-12">
+            <h4>Result = Both Accurate </h4>
+           <hr>
+           <h4></h4>
+          
+          </div>
+          </div>
+
+          <div class="test_image_and_result col-xs-12">
+            <li class="col-sm-4 col-xs-12">
+            <b>Test Image - </b>
+            
+            <img src="hair-tie.jpg" class="img-responsive">
+            </li>
+            
+            <h5 class="col-sm-4 col-xs-12">
+            Output on <b style="color:purple";>GOOGLE LENS</b> = 
+            <span style="color:red;">Lux Scrunchie,Large Oversized Scrunchie,Perfect Silk Satin Scrunchie</span>
+            </h5>
+            <h5 class="col-sm-4 col-xs-12">
+              Output on <b style="color:purple;">Mobilnet Model</b> = 
+              <span style="color:red;">Television,Television System</span>
+              </h5>
+              <div class="mini_result" class="col-xs-12">
+                <h4>Result =Google Net Is Accurate </h4>
+               <hr>
+               <h4></h4>
+              
+              </div>
+              </div>
+
+              <div class="test_image_and_result col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                
+                <img src="paint-brush.jpg" class="img-responsive">
+                </li>
+                
+                <h5 class="col-sm-4 col-xs-12">
+                Output on <b style="color:purple";>GOOGLE LENS</b> = 
+                <span style="color:red;">Work Stuff Detailing Brush,Paint Brush,Stanley Hobby Paintbrush</span>
+                </h5>
+                <h5 class="col-sm-4 col-xs-12">
+                  Output on <b style="color:purple;">Mobilnet Model</b> = 
+                  <span style="color:red;">Window Shade</span>
+                  </h5>
+                  <div class="mini_result" class="col-xs-12">
+                    <h4>Result = Google Net Is Accurate</h4>
+                   <hr>
+                   <h4></h4>
+                  
+                  </div>
+                  </div>
+
+                  <div class="test_image_and_result col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                    <b>Test Image - </b>
+                    
+                    <img src="pen.jpg" class="img-responsive">
+                    </li>
+                    
+                    <h5 class="col-sm-4 col-xs-12">
+                    Output on <b style="color:purple";>GOOGLE LENS</b> = 
+                    <span style="color:red;">Fibre Tip Colouring Pen,Red pen,Smooth Red Pen</span>
+                    </h5>
+                    <h5 class="col-sm-4 col-xs-12">
+                      Output on <b style="color:purple;">Mobilnet Model</b> = 
+                      <span style="color:red;">Rubber,Eraser</span>
+                      </h5>
+                      <div class="mini_result" class="col-xs-12">
+                        <h4>Result = Google Net Is Accurate</h4>
+                       <hr>
+                       <h4></h4>
+                      
+                      </div>
+                      </div>
+
+                      <div class="test_image_and_result col-xs-12">
+                        <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b>
+                        
+                        <img src="plant-pot.jpg" class="img-responsive">
+                        </li>
+                        
+                        <h5 class="col-sm-4 col-xs-12">
+                        Output on <b style="color:purple";>GOOGLE LENS</b> = 
+                        <span style="color:red;">Small Indoor Plant Pot,Handmade Plant Pot,Rustic Terracotta Plant pot</span>
+                        </h5>
+                        <h5 class="col-sm-4 col-xs-12">
+                          Output on <b style="color:purple;">Mobilnet Model</b> = 
+                          <span style="color:red;">Organ,Pipe Organ</span>
+                          </h5>
+                          <div class="mini_result" class="col-xs-12">
+                            <h4>Result =Google Net Is Accurate </h4>
+                           <hr>
+                           <h4></h4>
+                          
+                          </div>
+                          </div>
+
+                          <div class="test_image_and_result col-xs-12">
+                            <li class="col-sm-4 col-xs-12">
+                            <b>Test Image - </b>
+                            
+                            <img src="shoe.jpg" class="img-responsive">
+                            </li>
+                            
+                            <h5 class="col-sm-4 col-xs-12">
+                            Output on <b style="color:purple";>GOOGLE LENS</b> = 
+                            <span style="color:red;">Trainers Nike Air,Nike Air Max Men Shoes,Mens Black Nike Air</span>
+                            </h5>
+                            <h5 class="col-sm-4 col-xs-12">
+                              Output on <b style="color:purple;">Mobilnet Model</b> = 
+                              <span style="color:red;">Shoe</span>
+                              </h5>
+                              <div class="mini_result" class="col-xs-12">
+                                <h4>Result = Both Accurate</h4>
+                               <hr>
+                               <h4></h4>
+                              
+                              </div>
+                              </div>
+
+                              <div class="test_image_and_result col-xs-12">
+                                <li class="col-sm-4 col-xs-12">
+                                <b>Test Image - </b>
+                                
+                                <img src="siccors.jpg" class="img-responsive">
+                                </li>
+                                
+                                <h5 class="col-sm-4 col-xs-12">
+                                Output on <b style="color:purple";>GOOGLE LENS</b> = 
+                                <span style="color:red;">Pen Airsoft Richards siccors,Barber Scissors,Denim Pocket Siccors</span>
+                                </h5>
+                                <h5 class="col-sm-4 col-xs-12">
+                                  Output on <b style="color:purple;">Mobilnet Model</b> = 
+                                  <span style="color:red;">Seat Belt</span>
+                                  </h5>
+                                  <div class="mini_result" class="col-xs-12">
+                                    <h4>Result = Google Net Accurate</h4>
+                                   <hr>
+                                   <h4></h4>
+                                  
+                                  </div>
+                                  </div>
+</ol>
+</div>
+</center>
+<script src="main.js"></script>
+</body>
+
+</html>
+
+
